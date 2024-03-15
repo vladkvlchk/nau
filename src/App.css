@@ -1,38 +1,157 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  /* padding-bottom: 40px; */
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #ffffff calc(100% - 80px),
+    #3354ff 100%
+  );
+  /* Adjust the white to 70% and the blue starts from there */
+}
+
+.header {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page-name {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: #3354ff;
+  color: #ffffff;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.care-statement {
+  text-align: center;
+  font-weight: 800; /* If you want to keep it bold */
+  margin-top: 20px; /* You can adjust this value as needed */
+}
+
+.header h1 {
+  font-size: 48px;
+  color: #000000;
+  margin-bottom: 10px;
+  font-weight: 800; /* Use Extrabold for the header */
+}
+
+.header p {
+  font-size: 15px;
+  color: #000000;
+  margin: 0 auto 20px;
+  width: 100%;
+  max-width: 600px;
+  font-weight: 800; /* Make the font bolder */
+  line-height: 1.6; /* Increase line height for better readability */
+  text-align: justify; /* Justify the text for alignment as seen in the image */
+  hyphens: auto; /* Automatically add hyphens where appropriate */
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-button {
+  background-color: #ffffff;
+  color: black;
+  border: 2px solid #3354ff;
+  border-radius: 15px; /* Less rounded corners */
+  padding: 10px 60px;
+  margin: 10px 0;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-transform: uppercase;
+  width: 300px; /* Equal sizing */
+  height: 60px; /* Fixed height for uniformity */
+  box-shadow: 0 4px 8px rgba(51, 84, 255, 0.2);
+  position: relative;
+  z-index: 2;
+  font-weight: 800; /* Use Extrabold for the buttons as well */
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-button:hover {
+  background-color: #3354ff;
+  color: #ffffff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* COMPONENTS */
+
+.goHomeBtn {
+  color: #ffffff;
+  background-color: rgba(255, 105, 105, 0);
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.facultyBtn {
+  display: flex;
+  width: 350px;
+  height: 80px;
+  border-radius: 15px;
+  margin: 15px;
+}
+
+.facultyBtn:hover{
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+.facultyBtn_leftSide {
+  background-color: #3354ff;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 900;
+  min-width: 100px;
+  border-radius: 15px 0 0 15px;
+  padding: 30px 0;
+}
+
+.facultyBtn_rightSide {
+  flex: 1;
+  border: 3px solid #3354ff;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
 }
