@@ -52,6 +52,24 @@ body {
   margin: 0 auto;
 }
 
+.contacts{
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.contactItem{
+  display: flex;
+  align-items: center;
+  font-size: 25;
+}
+
+.contactItem svg{
+  margin: 5px 10px;
+}
+
 .care-statement {
   text-align: center;
   font-weight: 800; /* If you want to keep it bold */
