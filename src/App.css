@@ -52,7 +52,7 @@ body {
   margin: 0 auto;
 }
 
-.contacts{
+.contacts {
   align-self: start;
   display: flex;
   flex-direction: column;
@@ -60,13 +60,13 @@ body {
   justify-content: center;
 }
 
-.contactItem{
+.contactItem {
   display: flex;
   align-items: center;
   font-size: 25;
 }
 
-.contactItem svg{
+.contactItem svg {
   margin: 5px 10px;
 }
 
@@ -142,9 +142,20 @@ body {
 .nav-button:hover {
   background-color: #3354ff;
   color: #ffffff;
+  border-color: #c9d2ff;
+  outline: 3px solid #3354ff;
 }
 
-.emptyFooter{
+@media (max-width: 720px) {
+  .nav-button:hover {
+    background-color: #c9d2ff;
+    color: #000;
+    border-color: #3354ff;
+    outline: 3px solid #c9d2ff;
+  }
+}
+
+.emptyFooter {
   height: 170px;
   width: 100%;
 }
