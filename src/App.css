@@ -81,7 +81,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
+}
+
+.facultyList{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 720px){
+  .facultyList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 767px;
+    /* justify-content: center; */
+  }
+  
 }
 
 .nav-button {

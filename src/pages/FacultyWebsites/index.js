@@ -78,7 +78,7 @@ const FacultyWebsites = () => {
       </header>
       <div className="page-name">САЙТИ ФАКУЛЬТІВ</div>
       <div className="content">
-        <nav className="navigation">
+        <nav className="facultyList">
           {faculties.map((faculty) => (
             <FacultyItem {...faculty} />
           ))}
