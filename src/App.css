@@ -23,8 +23,8 @@ body {
   background: linear-gradient(
     to bottom,
     #ffffff 0%,
-    #ffffff calc(100% - 80px),
-    #3354ff 100%
+    #ffffff calc(100% - 170px),
+    rgba(51, 84, 255, 1) 100%
   );
   /* Adjust the white to 70% and the blue starts from there */
 }
@@ -83,20 +83,18 @@ body {
   align-items: center;
 }
 
-.facultyList{
+.facultyList {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-@media (min-width: 720px){
+@media (min-width: 720px) {
   .facultyList {
     flex-direction: row;
     flex-wrap: wrap;
     width: 767px;
-    /* justify-content: center; */
   }
-  
 }
 
 .nav-button {
@@ -128,12 +126,20 @@ body {
   color: #ffffff;
 }
 
+.emptyFooter{
+  height: 170px;
+  width: 100%;
+}
+
+/*  */
 /* COMPONENTS */
+/*  */
 
 .goHomeBtn {
   color: #ffffff;
   background-color: rgba(255, 105, 105, 0);
   width: 100%;
+  height: 170px;
   border: none;
   cursor: pointer;
 }
@@ -146,7 +152,7 @@ body {
   margin: 15px;
 }
 
-.facultyBtn:hover{
+.facultyBtn:hover {
   transform: translateY(-1px);
   opacity: 0.9;
 }

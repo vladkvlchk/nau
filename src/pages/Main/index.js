@@ -36,6 +36,7 @@ const Main = () => {
           </Link>
         </nav>
       </div>
+      <div className="emptyFooter"></div>
     </div>
   );
 };
